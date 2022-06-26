@@ -147,6 +147,9 @@ window.onbeforeunload = function () {
   var string = JSON.stringify(hashMap);
   localStorage.setItem('x', string);
 };
+$('.sousuo').on('keypress', function (e) {
+  e.stopPropagation();
+});
 
 $(document).on('keypress', function (e) {
   var key = e.key;
@@ -158,4 +161,4 @@ $(document).on('keypress', function (e) {
   }
 });
 },{}]},{},["epB2"], null)
-//# sourceMappingURL=main.d977b275.map
+//# sourceMappingURL=main.8bbd1a75.map

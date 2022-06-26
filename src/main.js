@@ -57,6 +57,8 @@ window.onbeforeunload = () => {
   const string = JSON.stringify(hashMap)
   localStorage.setItem('x', string)
 }
+$('.sousuo').on('keypress',(e) => {
+    e.stopPropagation()})
 
 $(document).on('keypress', (e) => {
   const {key} = e
